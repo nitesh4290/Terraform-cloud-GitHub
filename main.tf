@@ -16,7 +16,7 @@ provider "aws" {
 resource "aws_instance" "Raminfra" {
 	ami = "ami-0453ec754f44f9a4a" 
 	instance_type = "t2.small"
-	tags {
+	tag {
 		NAME = "cloud-server"
 	}
 }
